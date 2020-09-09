@@ -70,43 +70,45 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a onclick="window.location.href='../index.html'" class="nav-link">Halaman Utama</a></li>
-
+<!-- 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Kategori
                   </a>
                   <div class="dropdown-menu pl-5 text-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" onclick="window.location.href='kanker1.php'">Kanker</a>
-                    <a class="dropdown-item" onclick="window.location.href='alkes1.php'">Alat Kesehatan</a>
-                    <a class="dropdown-item" onclick="window.location.href='balita1.php'">Balita</a>
-                    <a class="dropdown-item" onclick="window.location.href='batukpilek1.php'">Batuk dan Pilek</a>
-                    <a class="dropdown-item" onclick="window.location.href='pernafasandanmulut1.php'">Kesehatan Pernafasan dan Mulut</a>
+                    <a class="dropdown-item" onclick="window.location.href='kanker1.html'">Kanker</a>
+                    <a class="dropdown-item" onclick="window.location.href='alkes1.html'">Alat Kesehatan</a>
+                    <a class="dropdown-item" onclick="window.location.href='balita1.html'">Balita</a>
+                    <a class="dropdown-item" onclick="window.location.href='batukpilek1.html'">Batuk dan Pilek</a>
+                    <a class="dropdown-item" onclick="window.location.href='pernafasandanmulut1.html'">Kesehatan Pernafasan dan Mulut</a>
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organ Vital (Jantung,Otak...)</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                      <a class="dropdown-item" onclick="window.location.href='ginjal1.php'">Kesehatan Ginjal</a>
-                      <a class="dropdown-item" onclick="window.location.href='jantung1.php'">Kesehatan Jantung</a>
-                      <a class="dropdown-item" onclick="window.location.href='otakdansyaraf1.php'">Kesehatan Otak dan Syaraf</a>
-                      <a class="dropdown-item" onclick="window.location.href='paruparu1.php'">Kesehatan Paru-Paru</a>
-                      <a class="dropdown-item" onclick="window.location.href='hati1.php'">Kesehatan Fungsi Hati (Liver)</a>
+                      <a class="dropdown-item" onclick="window.location.href='ginjal1.html'">Kesehatan Ginjal</a>
+                      <a class="dropdown-item" onclick="window.location.href='jantung1.html'">Kesehatan Jantung</a>
+                      <a class="dropdown-item" onclick="window.location.href='otakdansyaraf1.html'">Kesehatan Otak dan Syaraf</a>
+                      <a class="dropdown-item" onclick="window.location.href='paruparu1.html'">Kesehatan Paru-Paru</a>
+                      <a class="dropdown-item" onclick="window.location.href='hati1.html'">Kesehatan Fungsi Hati (Liver)</a>
                     </div>
                    
                     <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" onclick="window.location.href='pria1.php'">Kesehatan Pria</a>
-                      <a class="dropdown-item" onclick="window.location.href='wanita1.php'">Kesehatan Wanita</a>
-                      <a class="dropdown-item" onclick="window.location.href='airkecil1.php'">Kesehatan Saluran Air Kecil</a>
+                      <a class="dropdown-item" onclick="window.location.href='pria1.html'">Kesehatan Pria</a>
+                      <a class="dropdown-item" onclick="window.location.href='wanita1.html'">Kesehatan Wanita</a>
+                      <a class="dropdown-item" onclick="window.location.href='airkecil1.html'">Kesehatan Saluran Air Kecil</a>
                       <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" onclick="window.location.href='mata1.php'">Kesehatan Mata</a>
-                    <a class="dropdown-item" onclick="window.location.href='telinga1.php'">Kesehatan Telinga</a>
-                    <a class="dropdown-item" onclick="window.location.href='kulit1.php'">Kesehatan Kulit</a>
-                    <a class="dropdown-item" onclick="window.location.href='pencernaan1.php'">Kesehatan Pencernaan</a>
-                    <a class="dropdown-item" onclick="window.location.href='persendian1.php'">Kesehatan Persendian</a>
-                    <a class="dropdown-item" onclick="window.location.href='tulang1.php'">Kesehatan Tulang</a>
-                    <a class="dropdown-item" onclick="window.location.href='lainya1.php'">Kesehatan Lainnya</a>
-                    <a class="dropdown-item" onclick="window.location.href='peliharakesehatan1.php'">Memelihara Kesehatan</a>
-                    <a class="dropdown-item" onclick="window.location.href='obatluar1.php'">Obat Luar / Obat Gosok/ Minyak / Salep</a>
+                    <a class="dropdown-item" onclick="window.location.href='mata1.html'">Kesehatan Mata</a>
+                    <a class="dropdown-item" onclick="window.location.href='telinga1.html'">Kesehatan Telinga</a>
+                    <a class="dropdown-item" onclick="window.location.href='kulit1.html'">Kesehatan Kulit</a>
+                    <a class="dropdown-item" onclick="window.location.href='pencernaan1.html'">Kesehatan Pencernaan</a>
+                    <a class="dropdown-item" onclick="window.location.href='persendian1.html'">Kesehatan Persendian</a>
+                    <a class="dropdown-item" onclick="window.location.href='tulang1.html'">Kesehatan Tulang</a>
+                    <a class="dropdown-item" onclick="window.location.href='lainya1.html'">Kesehatan Lainnya</a>
+                    <a class="dropdown-item" onclick="window.location.href='peliharakesehatan1.html'">Memelihara Kesehatan</a>
+                    <a class="dropdown-item" onclick="window.location.href='obatluar1.html'">Obat Luar / Obat Gosok/ Minyak / Salep</a>
                   </div>
-                </li>
+                </li> -->
 
+                <li><a onclick="window.location.href='produk.php'" class="nav-link">Produk Shop</a></li>
+                <li><a onclick="window.location.href='../ramuan-shop.html'" class="nav-link">Ramuan Shop</a></li>
                 <li><a href="#contact-section" class="nav-link">Kontak</a></li>
 
               </ul>
