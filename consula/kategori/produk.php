@@ -47,19 +47,19 @@ require_once "toppart.php";
 
       <div class="col-md-6">
         <div class="card">
-          <img class="card-img-top" src="../images/covid19.jpg" alt="Card image cap">
+          <img class="card-img-top" src="https://bantjietong.com/storeimage/obt-img/JPEG_Gold-G%20Bio%20Sea%20Cucumber%20(jeli%20gamat)%20_001.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Obat Pencegahan Covid-19</h5>
+            <h5 class="card-title">Gold-G Bio Sea Cucumber (jeli Gamat)</h5>
             <p class="card-text text-center">Meningkatkan daya tahan tubuh, meredakan gangguan sakit lambung, mempercepat penyembuhan luka pada penyakit diabetes serta menghilangkan bau pada luka gangren, meringankan sakit pada persendian, menghentikan pendarahan pada wasir, mempercepat penyembuhan pasca operasi maupun bersalin, menurunkan kadar kolesterol dan trigliserida, meringankan penyakit asma, memperbaiki tekstur kulit
             </p>
           </div>
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <footer class="blockquote-footer">#covid19 #corona #covit #covid</footer>
+              <footer class="blockquote-footer">#seacucumber#jeligamat#jeli gamat</footer>
             </blockquote>
           </div>
           <div class="card-body">
-            <a href="https://wa.me/6287764908637?text=Saya%20ingin%20pesan%20(Covid-19)" target="_blank" class="card-link">Whatsapp*</a>
+            <a href="https://wa.me/6287764908637?text=Saya%20ingin%20pesan%20(Qnc jeligamat)" target="_blank" class="card-link">Whatsapp*</a>
             <a href="https://www.tokopedia.com/bantjietong/etalase/ramuan" class="card-link">Tokopedia**</a>
           </div>
         </div>

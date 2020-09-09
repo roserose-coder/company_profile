@@ -12,6 +12,11 @@ require_once "toppart.php";
       </div>
     </div>
 
+    <?php
+          require_once "nodataproduk.php";
+        ?>
+
+    <!-- 
     <div class="row">
 
       <div class="col-md-6">
@@ -61,7 +66,7 @@ require_once "toppart.php";
 
      
 
-    </div>
+    </div> -->
 
   </div>
 </section>

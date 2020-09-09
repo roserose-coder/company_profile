@@ -8,7 +8,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h3 class="section-sub-title">Produk</h3>
+            <a href="produk.php"><h3 class="section-sub-title">Produk</h3></a>
             <h2 class="section-title mb-3">Batuk dan Pilek</h2>
           </div>
         </div>
