@@ -9,6 +9,8 @@ require_once "toppart.php";
       <div class="col-12 text-center">
         <h3 class="section-sub-title">shop</h3>
         <h2 class="section-title mb-3">Produk</h2>
+        
+        
       </div>
     </div>
 
@@ -37,6 +39,9 @@ require_once "toppart.php";
       <a href="obatluar1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Obat Luar,Minyak,Salep</a>
 
     </div>
+
+    *  Klik <strong>Whatsapp</strong> untuk transaksi via obrolan whatsapp<br>
+        ** Klik <strong>Tokopedia</strong> untuk ditujukan ke link tokopedia kami
 
     <div class="row">
 
