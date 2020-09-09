@@ -1,16 +1,14 @@
 <?php
-require_once "toppart.php";
+  require_once "toppart.php";
 ?>
-
-<!---START ISI-->
-
-
+<!-- START ISI -->
+  
     <section class="site-section" id="blog-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
             <h3 class="section-sub-title">Produk</h3>
-            <h2 class="section-title mb-3">Kesehatan Fungsi Hati</h2>
+            <h2 class="section-title mb-3">Alat Kesehatan</h2>
           </div>
         </div>
 
@@ -93,6 +91,7 @@ require_once "toppart.php";
         </div>
       </div>
     </section>
+
 <!---END ISI-->
 
 <?php
