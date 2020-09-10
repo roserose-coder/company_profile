@@ -131,7 +131,7 @@ require_once "toppart.php";
           </div>
           <div class="card-body">
             <a href="https://wa.me/6287764908637?text=Saya%20ingin%20pesan%20(No:167|Kunir Putih)" target="_blank" class="card-link">Whatsapp*</a>
-            <a href="https://www.tokopedia.com/bantjietong/typhonium-plus" class="card-link">Tokopedia**</a>
+            <a href="https://www.tokopedia.com/bantjietong/kunir-putih" class="card-link">Tokopedia**</a>
           </div>
         </div>
       </div>
