@@ -43,7 +43,13 @@ require_once "toppart.php";
     *  Klik <strong>Whatsapp</strong> untuk transaksi via obrolan whatsapp<br>
         ** Klik <strong>Tokopedia</strong> untuk ditujukan ke link tokopedia kami
 
-    <div class="row">
+
+        <div class="row">
+    <h1>Ada sebagian barang yang belum dimasukan ! Masih dalam proses .Silahkan lihat alternatif di Tokopedia kami .Atau tanya langsung lewat Whatsapp disini</h1>
+    <h3><a href="https://wa.me/6287764908637?text=Saya%20ingin%20tanya">Tanya lewat whatsapp</a></h3>
+</div>
+
+    <!-- <div class="row">
 
       <div class="col-md-6">
         <div class="card">
@@ -92,7 +98,7 @@ require_once "toppart.php";
 
 
 
-    </div>
+    </div> -->
 
   </div>
 </section>
