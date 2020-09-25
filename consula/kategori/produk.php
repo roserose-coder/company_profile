@@ -1,5 +1,5 @@
 <?php
-require_once "toppart.php";
+require_once "toppart_produk.php";
 ?>
 <!-- START ISI -->
 
@@ -15,90 +15,23 @@ require_once "toppart.php";
     </div>
 
     <div class="row mb-3">
-      <strong>Kategori :</strong> 
-      <a href="kanker1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Kanker</a>
-      <a href="alkes1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Alat Kesehatan</a>
-      <a href="balita1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Balita</a>
-      <a href="batukpilek1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Batuk dan Pilek</a>
-      <a href="ginjal1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Ginjal</a>
-      <a href="jantung1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Jantung</a>
-      <a href="otakdansyaraf1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Otak dan Syaraf</a>
-      <a href="paruparu1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Paru-paru</a>
-      <a href="hati1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Fungsi Hati</a>
-      <a href="pria1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Pria(Prostat,Kesuburan..)</a>
-      <a href="wanita1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Wanita(Menstruasi,Keseuburan..)</a>
-      <a href="airkecil1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Saluran Air Kecil</a>
-      <a href="mata1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Mata</a>
-      <a href="telinga1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Telinga</a>
-      <a href="kulit1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Kulit</a>
-      <a href="pencernaan1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Pencernaan</a>
-      <a href="persendian1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Persendian</a>
-      <a href="tulang1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Tulang</a>
-      <a href="lainya1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Penyakit Lainnya</a>
-      <a href="peliharakesehatan1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Memelihara Kesehatan</a>
-      <a href="obatluar1.php" class="border pl-1 pr-1 mr-1 ml-1 mb-1 mt-1 rounded text-dark">Obat Luar,Minyak,Salep</a>
-
+      <strong>Kategori</strong> 
+      <div class="d-flex flex-wrap" id="loadkategori">
+        <!-- isi ajax -->
+      </div>
     </div>
 
     *  Klik <strong>Whatsapp</strong> untuk transaksi via obrolan whatsapp<br>
         ** Klik <strong>Tokopedia</strong> untuk ditujukan ke link tokopedia kami
 
 
-        <div class="row">
-    <h1>Ada sebagian barang yang belum dimasukan ! Masih dalam proses .Silahkan lihat alternatif di Tokopedia kami .Atau tanya langsung lewat Whatsapp disini</h1>
-    <h3><a href="https://wa.me/6287764908637?text=Saya%20ingin%20tanya">Tanya lewat whatsapp</a></h3>
+  <div class="row">
+    <!-- ajax isi barang -->
+  </div>
+   
 </div>
 
-    <!-- <div class="row">
-
-      <div class="col-md-6">
-        <div class="card">
-          <img class="card-img-top" src="https://bantjietong.com/storeimage/obt-img/JPEG_Gold-G%20Bio%20Sea%20Cucumber%20(jeli%20gamat)%20_001.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Gold-G Bio Sea Cucumber (jeli Gamat)</h5>
-            <p class="card-text text-center">Meningkatkan daya tahan tubuh, meredakan gangguan sakit lambung, mempercepat penyembuhan luka pada penyakit diabetes serta menghilangkan bau pada luka gangren, meringankan sakit pada persendian, menghentikan pendarahan pada wasir, mempercepat penyembuhan pasca operasi maupun bersalin, menurunkan kadar kolesterol dan trigliserida, meringankan penyakit asma, memperbaiki tekstur kulit
-            </p>
-          </div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <footer class="blockquote-footer">#seacucumber#jeligamat#jeli gamat</footer>
-            </blockquote>
-          </div>
-          <div class="card-body">
-            <a href="https://wa.me/6287764908637?text=Saya%20ingin%20pesan%20(Qnc jeligamat)" target="_blank" class="card-link">Whatsapp*</a>
-            <a href="https://www.tokopedia.com/bantjietong/etalase/ramuan" class="card-link">Tokopedia**</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-
-        <div class="card">
-          <img class="card-img-top" src="../images/fertility.jpg" alt="Card image cap">
-
-          <div class="card-body">
-            <h5 class="card-title">Paket Kesuburan</h5>
-            <p class="card-text">1 paket terdapat 3 bungkus ramuan untuk pria dan 3 bungkus ramuan untuk wanita</p>
-          </div>
-
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <footer class="blockquote-footer">#cepathamil #kesuburan #penyubur laki #penyubur perempuan</footer>
-            </blockquote>
-          </div>
-
-          <div class="card-body">
-            <a href="https://wa.me/6287764908637?text=Saya%20ingin%20pesan%20(Paket Kesuburan)" target="_blank" class="card-link">Whatsapp*</a>
-            <a href="https://www.tokopedia.com/bantjietong/etalase/ramuan" class="card-link">Tokopedia**</a>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-    </div> -->
+    
 
   </div>
 </section>
@@ -108,3 +41,19 @@ require_once "toppart.php";
 <?php
 require_once "bottompart.php";
 ?>
+
+<script>
+ $.post("../ajaxes/a_kategori.php", {
+        kind: "jumkat",
+    }, function(data) {
+        console.log(data);
+    });
+
+  $.post("../ajaxes/a_kategori.php", {
+      kind: "loadkategori",
+  }, function(data) {
+    var arr=JSON.parse(data);
+
+      $("#loadkategori").html(arr.data);
+  });
+</script>

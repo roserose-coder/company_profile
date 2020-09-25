@@ -15,7 +15,7 @@
               <p class="mb-4"><a href="#">(031) 3537559</a></p>
 
               <p class="mb-0 font-weight-bold">Whatsapp</p>
-              <p class="mb-4"><a href="https://wa.me/6287764908637?text=Saya%20ingin%20tanya%20obat" target="_blank" >+62 87764908637</a></p>
+              <p class="mb-4"><a href="https://wa.me/6287764908637?text=Saya%20ingin%20tanya%20obat" target="_blank" >+62 87764908637 (Khusus Chat)</a></p>
 
               <p class="mb-0 font-weight-bold">Alamat Email</p>
               <p class="mb-0"><a href="#">info@bantjietong.com</a></p>
@@ -41,7 +41,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#about-section">Tentang Kami</a></li>
                   <li><a href="#contact-section">Kontak</a></li>
-                  <li><a href="#blog-section">Blog</a></li>
+                  <!-- <li><a href="#blog-section">Blog</a></li> -->
                 </ul>
               </div>
               <div class="col-md-3">
