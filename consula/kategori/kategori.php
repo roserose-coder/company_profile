@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start();?>
+<?php 
+require_once "../ajaxes/conn.php";
+session_start(); ?>
+
 <head>
     <title>BTT-Ban Tjie Tong</title>
     <meta charset="utf-8">
@@ -92,6 +95,7 @@
         <div class="jumbotron jumbotron-fluid bg-light">
             <div class="container">
                 <br><br>
+
             </div>
         </div>
 
@@ -100,83 +104,141 @@
         <?php
         $idkategori = 0;
         if (isset($_GET["idk"])) {
+            $_SESSION["idkat"] = $_GET['idk'];
             $idkategori = $_GET["idk"];
-        } else {
-            header("location:produk.php");
-        }
-
-        if ($idkategori == 0) {
-            header("location:produk.php");
-        }
+        } 
         ?>
         <!-- START ISI -->
 
 
         <section class="site-section" id="blog-section">
+
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
-                        <h1>>Nama KATEGORI<</h1>
-                        <!-- KASIH TULISAN NAMA KATEGORI H1 --> diajax ksh id 
-                        <a href="produk.php">
-                            <h3 class="section-sub-title">Produk</h3>
-                        </a>
-                        <h2 class="section-title mb-3" id="namakat"></h2>
+                        <div class="col-12 text-center">
+                            <a href="produk.php">
+                                <h3 class="section-sub-title">Shop</h3>
+                            </a>
+                            <h2 class="section-title mb-3" id="nama">Product</h2>
+                            * Klik <strong>Whatsapp</strong> untuk transaksi via obrolan whatsapp<br>
+                            ** Klik <strong>Tokopedia</strong> untuk ditujukan ke link tokopedia kami
+                        </div>
                     </div>
                 </div>
 
 
 
                 <div id="datanya" class="row">
-                    <!-- isi produk dengan ajax -->
-                    >card para barang barang< dia jax
+
+                    <?php
+                    $idkat=$_SESSION["idkat"];
+                    if (isset($_GET['pageno'])) {
+                        $pageno = $_GET['pageno'];
+                    } else {
+                        $pageno = 1;
+                    }
+                    $no_of_records_per_page = 10;
+                    $offset = ($pageno - 1) * $no_of_records_per_page;
+
+                    $conn =getConn();
+                    // Check connection
+                    if (mysqli_connect_errno()) {
+                        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        die();
+                    }
+
+                    $total_pages_sql = "SELECT COUNT(*) FROM barang where kategori='$idkat' and link_tokopedia!=''";
+                    $result = mysqli_query($conn, $total_pages_sql);
+                    $total_rows = mysqli_fetch_array($result)[0];
+                    $total_pages = ceil($total_rows / $no_of_records_per_page);
+                    $kal = "";
+                    $sql = "SELECT * FROM barang where kategori='$idkat' and link_tokopedia!='' LIMIT $offset, $no_of_records_per_page";
+                    $res_data = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_array($res_data)) {
+                        //here goes the data
+                        $id = $row["id_barang"];
+                        $nama = $row["nama_barang"];
+                        $topedlink = $row["link_tokopedia"];
+                        $gambar = "https://bantjietong.com/storeimage/obt-img/" . $row["link_gambar1"];
+                        $kal .= " <div class='col-sm-6'>
+                    <div class='card'>
+                        <img class='card-img-top' src='$gambar' alt='Card image cap'>
+
+                        <div class='card-body'>
+                            <h5 class='card-title text-primary'>$nama</h5>
+                            <p class='card-text'>Tim ayam obat ,kuah agak manis</p>
+                        </div>
+
+                        <div class='card-body'>
+                            <a href='https://wa.me/6287764908637?text=Saya%20ingin%20pesan%20(Tun Cie)' target='_blank' class='card-link text-primary btn btn-secondary'>Whatsapp*</a>
+                            <a href='$topedlink' class='card-link text-primary btn btn-secondary'>Tokopedia **</a>
+                        </div>
+                    </div>
+                </div>";
+                    }
+                    echo $kal;
+                    mysqli_close($conn);
+                    ?>
+
+
                 </div>
 
-                <nav>
-                    Halaman :
-                    >dipaging pakai ajax kl gk bisa lewati gpp <
-                    <ul class="pagination pagination-lg" id="pagingnya">
-                        <!-- isi paging dengan ajax -->
-
-                    </ul>
-                </nav>
-
             </div>
-        </section>
+
+            <nav>
+
+              <ul class="pagination" >
+        <li class="page-item <?php if($pageno <= 1){ echo 'disabled'; } ?>">
+            <a class="page-link" href="<?php if($pageno <= 1){ echo "#"; } else { echo "kategori.php?idk=$idkat&pageno=".($pageno - 1); } ?>"><</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link"><strong><?php echo $_GET["pageno"];?></strong></a> 
+        </li>
+        <li class="page-item <?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
+            <a class="page-link" href="<?php if($pageno >= $total_pages){ echo "#"; } else { echo "kategori.php?idk=$idkat&pageno=".($pageno + 1); } ?>">></a>
+        </li>
+    </ul>
+            </nav>
+
+    </div>
+    </section>
 
 
 
-        <!---END ISI-->
+    <!---END ISI-->
 
-<?php
-require_once "bottompart.php";
-?>
+    <?php
+    require_once "bottompart.php";
+    ?>
 
-<script>
-  $.post("../ajaxes/a_kategori.php", {
-      kind: "loadpage",
-      idk:"<?php echo "$idkategori";?>"
-  }, function(data) {
-      console.log(data);
-    var arr=JSON.parse(data);
-      $("#pagingnya").html(arr.data);
-      $("#namakat").html(arr.namakat);
-  });
+    <script>
+        $.post("../ajaxes/a_kategori.php", {
+            kind: "loadpage"
+        }, function(data) {
+            console.log(data);
+            var arr = JSON.parse(data);
+            $("#pagingnya").html(arr.data);
+            $("#nama").html(arr.namakat);
+        });
 
-  function loadpage(hal){
-    $.post("../ajaxes/a_kategori.php", {
-      kind: "loaddata",
-      page:hal,
-      idk:"<?php echo "$idkategori";?>"
-    }, function(data) {
-        var arr=JSON.parse(data);
-        $("datanya").html(arr.data);
-    });
-  }
+        function loadpage(hal) {
+            $.post("../ajaxes/a_kategori.php", {
+                kind: "loaddata",
+                page: hal,
+                idk: "<?php echo "$idkategori"; ?>"
+            }, function(data) {
+                var arr = JSON.parse(data);
+                $("datanya").html(arr.data);
+            });
+        }
 
-  loadpage("1");
+        loadpage("1");
 
-
-  
-
-</script>
+        // $.post("../ajaxes/a_kategori.php", {
+        //     kind: "getitemfromkat",
+        // }, function(data) {
+        //     var arr = JSON.parse(data);
+        //     $("#datanya").html(arr.data);
+        // });
+    </script>
